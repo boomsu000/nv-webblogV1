@@ -21,7 +21,7 @@ module.exports = {
 
     //show user by id
     show(req,res){
-        res.send('ดูข้อมูลผู้ใช้' + req.params.userId+" " + JSON.stringify(req.body.name))
+        res.send('ดูข้อมูลผู้ใช้' + req.params.userId+" " + JSON.stringify(req.body))
     },
     
 }

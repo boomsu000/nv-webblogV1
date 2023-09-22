@@ -1,6 +1,7 @@
 let express = require('express')
 let bodyParser = require('body-parser')
-
+const {sequelize} = require('./models')
+const config = require('./config/config')
 const app = express()
 
 app.use(bodyParser.json())
