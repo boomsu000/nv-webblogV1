@@ -1,7 +1,7 @@
 <template>
     <div>
       <h1>Get movie By Id</h1>
-      <div>id: {{ muser.id }}</div>
+      <div>id: {{ muser.idm }}</div>
       <div>ชื่อหนัง: {{ muser.moviename }}</div>
       <div>ผู้กำกับ: {{ muser.director }}</div>
       <div>ทุน: {{ muser.budget }}</div>
@@ -26,7 +26,7 @@
         this.$router.push(route);
       }
     },
-    async createdMovie() {
+    async created() {
       try {
         let muserId = this.$route.params.muserId;
         this.muser = (await MovieService.show(muserId)).data;

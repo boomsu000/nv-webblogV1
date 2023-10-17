@@ -94,9 +94,11 @@ h3 {
         this.musers = (await MovieService.index()).data;
       }
     },
-    async createdMovie() {
-      try{
+    async created() {
+      try
+      {
         this.musers = (await MovieService.index()).data;
+        console.log(this.musers)
       }catch (err){
         console.log(err)
       }

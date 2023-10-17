@@ -1,7 +1,7 @@
 <template>
     <div>
       <h1>Edit movie</h1>
-      <form v-on:submit.prevent="editUser">
+      <form v-on:submit.prevent="editMovie">
         <p>ชื่อหนัง: <input type="text" v-model="muser.moviename" /></p>
         <p>ผู้กำกับ: <input type="text" v-model="muser.director" /></p>
         <p>ทุน: <input type="text" v-model="muser.budget" /></p>
@@ -46,7 +46,7 @@
         }
       }
     },
-    async createdMovie() {
+    async created() {
       try {
         let muserId = this.$route.params.userId
         this.muser = (await UsersService.show(muserId)).data

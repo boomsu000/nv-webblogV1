@@ -67,7 +67,7 @@ export default {
 
 
                 this.$router.push({
-                    name: 'musers'
+                    name: 'users'
                 })
 
             } catch (error) {

@@ -6,7 +6,7 @@ const movieController = require('./controllers/movieController')
 module.exports = (app) => {
      // get user by id
      app.get('/users', UserController.index,UserController.index)
-     app.get('/musers', movieController.index,movieController.index)
+     app.get('/musers', movieController.index)
      // create user
      app.post('/user', UserController.create)
      app.post('/muser', movieController.create)

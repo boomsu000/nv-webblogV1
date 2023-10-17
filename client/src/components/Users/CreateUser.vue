@@ -38,7 +38,7 @@ h3 {
 <template>
     <div><center>
       <h1>เพื่มสมาชิก</h1>
-      <form v-on:submit.prevent = "createUser">
+      <form v-on:submit.prevent ="createUser">
         <p>ชื่อ:<input type="text" v-model="user.name"></p>
         <p>นามสกุล: <input type="text" v-model="user.lastname"></p>
         <p>email: <input type="text" v-model="user.email"></p>

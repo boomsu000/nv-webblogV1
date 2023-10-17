@@ -8,7 +8,7 @@ module.exports = {
       res.send(movies)
     } catch (error) {
       res.status(500).send({
-         error: 'The movie information was incorrect'
+         error: 'The moviess information was incorrect'
         })
     }
    
@@ -21,7 +21,7 @@ module.exports = {
       res.send(movie.toJSON())
     } catch (error) {
       res.status(500).send({
-         error: 'The movie information was incorrect'
+         error: 'The create movie information was incorrect'
         })
     }
   },
