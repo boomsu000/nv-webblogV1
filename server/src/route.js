@@ -6,19 +6,19 @@ const movieController = require('./controllers/movieController')
 module.exports = (app) => {
      // get user by id
      app.get('/users', UserController.index,UserController.index)
-     app.get('/musers', movieController.index)
+     app.get('/movies', movieController.index)
      // create user
      app.post('/user', UserController.create)
-     app.post('/muser', movieController.create)
+     app.post('/movie', movieController.create)
      // edit user, suspend, active
      app.put('/user/:userId', UserController.put)
-     app.put('/muser/:muserId', movieController.put)
+     app.put('/movie/:movieId', movieController.put)
      // delete user
      app.delete('/user/:userId', UserController.delete)
-     app.delete('/muser/:muserId', movieController.delete)
+     app.delete('/movie/:movieId', movieController.delete)
      // get all user
      app.get('/user/:userId', UserController.show)
-     app.get('/muser/:muserId', movieController.show)
+     app.get('/movie/:movieId', movieController.show)
      // login
      app.post('/login', UserAuthenController.login)
 

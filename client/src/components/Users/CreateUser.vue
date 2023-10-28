@@ -1,40 +1,4 @@
-<style>
-.buttonnn {
-  background-color: #89af4c; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
 
-.button2 {background-color: #469e54;color: rgb(255, 255, 255);}
-.button3 {background-color: #f44336;color: rgb(255, 255, 255);} 
-h1 {
-  font-size: 50px;
-}
-h4 {
-  text-align: center;
-}
-
-h2 {
-  text-align: left;
-}
-
-h3 {
-  text-align: right;
-}
-.alignleft {
-	float: left;
-}
-.alignright {
-	float: right;
-}
-</style>
 <template>
     <div><center>
       <h1>เพื่มสมาชิก</h1>
@@ -70,7 +34,7 @@ h3 {
       async createUser(){
         try{
           await UsersService.post(this.user)
-          this.$router.push('/login')
+          this.$router.push('/users')
         }
       
         catch(err){

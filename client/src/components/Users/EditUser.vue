@@ -7,7 +7,6 @@
         <p>email: <input type="text" v-model="user.email" /></p>
         <p>password: <input type="text" v-model="user.password" /></p>
         <p><button type="submit">edit user</button></p>
-        <div><button @click="navigateTo('/users')">กลับ</button></div>
       </form>
       <hr />
       <div>

@@ -24,7 +24,6 @@
             <b> Email <br><br /><input type="text" v-model="email" /></b><br><br/>
             <b> Password<br><br /> <input type="password" v-model="password" /></b><br><br/>
             <button class="buttonnnn button" type="submit"><b>Login</b></button>
-            <button class="button" @click="navigateTo('/user/create')"><b>สมัครสมาชิก</b></button><br><br/>
             <b><div class="error" v-if="error">{{ error }}</div></b> 
         </form>
     </div></center>

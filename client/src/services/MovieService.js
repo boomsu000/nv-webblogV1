@@ -1,18 +1,19 @@
 import Api from '@/services/Api'
+
 export default {
- index (search) {
- return Api().get('musers')
- },
- show (muserId) {
- return Api().get('muser/'+muserId)
- },
- post (muser) {
- return Api().post('muser', muser)
- },
- put (muser) {
- return Api().put('muser/'+muser.id, muser)
- },
- delete (muser) {
- return Api().delete('muser/'+muser.id, muser)
- },
+    index (search){
+        return Api().get('movies')
+    },
+    show (movieId){
+        return Api().get('movie/'+movieId)
+    },
+    post (movie){
+        return Api().post('movie',movie)
+    },
+    put (movie){
+        return Api().put('movie/'+movie.id, movie)
+    },
+    delete (movie){
+        return Api().delete('movie/'+movie.id, movie)
+    }
 }

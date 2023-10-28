@@ -8,7 +8,7 @@ module.exports = {
       res.send(movies)
     } catch (error) {
       res.status(500).send({
-         error: 'The moviess information was incorrect'
+         error: 'The moviesss information was incorrect'
         })
     }
    
@@ -31,7 +31,7 @@ module.exports = {
     try {
       await Movie.update(req.body,{
       where: {
-        id: req.params.userId
+        id: req.params.movieId
       }
     })
     res.send(req.body)
@@ -47,7 +47,7 @@ module.exports = {
     try {
       const movie = await Movie.findOne({
         where: {
-          id: req.params.userId
+          id: req.params.movieId
         }
       })
       if (!movie) {
@@ -69,7 +69,7 @@ module.exports = {
     try {
       const movie = await Movie.findOne({
         where: {
-          id: req.params.userId
+          id: req.params.movieId
         }
       })
       if (!movie) {

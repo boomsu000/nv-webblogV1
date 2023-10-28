@@ -2,13 +2,13 @@ import Vue from 'vue'
 import Router from 'vue-router'
 // Users
 import UserIndex from '@/components/Users/Index'
-import MovieIndex from '@/components/Users/MovieIndex'
+import MovieIndex from '@/components/Movies/MovieIndex'
 import UserCreate from '@/components/Users/CreateUser'
-import CreateMovie from '@/components/Users/CreateMovie'
+import CreateMovie from '@/components/Movies/CreateMovie'
 import UserEdit from '@/components/Users/EditUser'
-import EditMovie from '@/components/Users/EditMovie'
+import EditMovie from '@/components/Movies/EditMovie'
 import UserShow from '@/components/Users/ShowUser'
-import ShowMovie from '@/components/Users/ShowMovie'
+import ShowMovie from '@/components/Movies/ShowMovie'
 import Login from '@/components/Users/login'
 
 
@@ -21,8 +21,8 @@ export default new Router({
             component: UserIndex
         },
         {
-            path: '/musers',
-            name: 'musers',
+            path: '/movies',
+            name: 'movies',
             component: MovieIndex
         },
         {
@@ -31,8 +31,8 @@ export default new Router({
             component: UserCreate
         },
         {
-            path: '/muser/create',
-            name: 'musers-create',
+            path: '/movie/create',
+            name: 'movies-create',
             component: CreateMovie
         },
         {
@@ -41,8 +41,8 @@ export default new Router({
             component: UserEdit
         },
         {
-            path: '/muser/edit/:muserId',
-            name: 'muser-edit',
+            path: '/movie/edit/:movieId',
+            name: 'movie-edit',
             component: EditMovie
         },
         {
@@ -51,8 +51,8 @@ export default new Router({
             component: UserShow
         },
         {
-            path: '/muser/:muserId',
-            name: 'muser',
+            path: '/movie/:movieId',
+            name: 'movie',
             component: ShowMovie
         },
         // authen
