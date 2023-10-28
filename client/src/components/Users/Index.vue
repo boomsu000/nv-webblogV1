@@ -1,7 +1,7 @@
 <template>
 <div>
       <h1>Get All Users</h1>
-      <div><h2>จำนวนผู้ใช้ {{ users.length }}</h2></div>
+      <div><h2>จำนวน User ทั้งหมด {{ users.length }} คน</h2></div>
       <div><button @click="navigateTo('/user/create')">เพื่มสมาชิก</button>
         <button @click="navigateTo('/movies')">ดู List Movie ทั้งหมด</button>
         <button v-on:click="logout" >Logout</button></div><hr>
